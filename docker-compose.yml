@@ -1,0 +1,19 @@
+version: "3.4"
+
+services:
+  ploomes:
+    image: ploomes
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+  db_postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: ploomes_sales
+      POSTGRES_USER: ploomes
+      POSTGRES_PASSWORD: root
+    ports:
+      - "15432:5432"
