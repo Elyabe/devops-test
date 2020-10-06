@@ -3,6 +3,7 @@ version: "3.4"
 services:
   ploomes:
     image: ploomes
+    container_name: ploomes_api
     build:
       context: .
       dockerfile: Dockerfile
@@ -12,6 +13,7 @@ services:
       - .env
   db_postgres:
     image: postgres
+    container_name: ploomes_db_postgres
     restart: always
     environment:
       POSTGRES_DB: ${POSTGRES_DB}

@@ -37,11 +37,10 @@ Obs: Os dados de vendas foram obtidos na plataforma [Kaggle]() e pode ser acessa
             <pre>chmod +x run_test.sh</pre>
 
     4.2. Execute o teste
-        <pre>sh run_test.sh</pre>
-    
-    As seguintes ações serão disparadas:
-    - A base de dados será populada;
-    - Uma chamada à API será realizada;
+    - Popule a base de dados;
+        <pre>sh run_test.sh init</pre>
+    - Realize uma chamada à API;
+        <pre>sh run_test.sh test</pre>
     - A imagem contendo o gráfico gerado pela API será disponibilizada no diretório atual;
     - Uma um link estará disponível também para visualização em um *browser*.
 
