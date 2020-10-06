@@ -10,8 +10,8 @@ app = Flask(__name__)
 api = Api(app)
 
 
-def get_vendors(fromDt, toDt):
-    """ query data from the vendors table """
+def get_sales(fromDt, toDt):
+    """ query data from the sales table """
     conn = None
     try:
         # params = config()
@@ -20,10 +20,6 @@ def get_vendors(fromDt, toDt):
             'database': os.environ.get('POSTGRES_DB'),
             'user': os.environ.get('POSTGRES_USER'),
             'password': os.environ.get('POSTGRES_PASSWORD')
-            # 'host': "localhost",
-            # 'database': "ploomes_sales",
-            # 'user': "dev",
-            # 'password': "User2020@dev"
         }
         print(params)
 
@@ -56,7 +52,7 @@ class HelloPloomes(Resource):
 
         # Pie chart, where the slices will be ordered and plotted counter-clockwise:
         try:
-            data = get_vendors(fromDt=args['fromDt'], toDt=args['toDt'])
+            data = get_sales(fromDt=args['fromDt'], toDt=args['toDt'])
             print(data)
             labels = data['names']
             sizes = data['sizes']
