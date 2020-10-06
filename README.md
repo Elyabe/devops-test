@@ -47,4 +47,4 @@ Obs: Os dados de vendas foram obtidos na plataforma [Kaggle]() e pode ser acessa
 
 ## :dark_sunglasses: Demonstração da aplicação
 
-> [Vídeo demonstração](https://youtu.be/TiIDHRZhpXw)
+> [Vídeo demonstração](https://youtu.be/DNsTa24Scv8)
