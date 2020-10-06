@@ -16,7 +16,7 @@ Obs: Os dados de vendas foram obtidos na plataforma [Kaggle]() e pode ser acessa
 ## :dark_sunglasses: Executando os scripts
 
 1. Clone este projeto;
-    <pre> git clone https://github.com/Elyabe/vila-task-reminder.git </pre>
+    <pre> git clone https://github.com/Elyabe/devops-test.git </pre>
 
 2. Configure as variáveis de ambiente execute o seguinte comando também na raíz do projeto
     <pre> cp .example.env .env </pre> 
